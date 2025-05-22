@@ -245,25 +245,46 @@ model0 <- lm(
 )
 
 # model 1: all predictors
-# INSERT MODEL CODE HERE
+model1 <- lm(
+  total_g ~ sla + water_treatment + species_name, # formula
+  data = drought_exp_clean # data frame
+)
 
 # model 2: SLA and water treatment
-# INSERT MODEL CODE HERE
+model2 <- lm(
+  total_g ~ sla + water_treatment, # formula
+  data = drought_exp_clean # data frame
+)
 
 # model 3: SLA and species
-# INSERT MODEL CODE HERE
+model3 <- lm(
+  total_g ~ sla + species_name, # formula
+  data = drought_exp_clean # data frame
+)
 
 # model 4: water treatment and species
-# INSERT MODEL CODE HERE
+model4 <- lm(
+  total_g ~ water_treatment + species_name, # formula
+  data = drought_exp_clean # data frame
+)
 
 # model 5: SLA
-# INSERT MODEL CODE HERE
+model5 <- lm(
+  total_g ~ sla, # formula
+  data = drought_exp_clean # data frame
+)
 
 # model 6: water treatment
-# INSERT MODEL CODE HERE
+model6 <- lm(
+  total_g ~ water_treatment, # formula
+  data = drought_exp_clean # data frame
+)
 
 # model 7: species
-# INSERT MODEL CODE HERE
+model7 <- lm(
+  total_g ~ species_name, # formula
+  data = drought_exp_clean # data frame
+)
 ```
 
 ## Model diagnostics
