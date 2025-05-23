@@ -177,7 +177,7 @@ ggplot(data = drought_exp_clean,
   # changing axis labels and title
   labs(x = "Water treatment",
        y = "Total mass (g)",
-       title = "Mean plant mass is higher in well watered than \ndrought stressed treatment") +
+       title = "Mean plant mass is higher in \n well watered than in \n drought stressed treatment") +
   # taking out legend
   theme(legend.position = "none")
 ```
@@ -216,7 +216,7 @@ ggplot(data = drought_exp_clean,
   # labelling axes and title
   labs(x = "Species",
        y = "Total mass (g)",
-       title = "Species differ in mean total mass") +
+       title = "Species differ in mean \n total mass") +
   # getting rid of legend
   theme(legend.position = "none")
 ```
