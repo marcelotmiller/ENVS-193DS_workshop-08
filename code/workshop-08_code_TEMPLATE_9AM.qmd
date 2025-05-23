@@ -77,7 +77,7 @@ theme_set(theme_bw())
 # 2. Clean data
 
 ```{r data-cleaning}
-# creating a clean dat aframe
+# creating a clean data frame
 drought_exp_clean <- drought_exp |> # starting with the drought_exp object
   # cleaning column names
   clean_names() |> 
@@ -149,7 +149,7 @@ ggplot(data = drought_exp_clean,
   # relabeling axes and adding a title
   labs(x = expression(Specific~leaf~area~(cm^2/g)),
        y = "Total mass (g)",
-       title = "As SLA increases, total plant mass tends to increase \n (positive relationship)")
+       title = "As SLA increases, total plant mass tends to increase (positive relationship)")
 ```
 
 ## What are the differences in total mass between water treatments?
